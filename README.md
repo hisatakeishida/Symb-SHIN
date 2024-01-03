@@ -1,2 +1,2 @@
 # Symb-SHIN
-Computational workflow to identify Symbiodiniaceae diversity by Scrapping Hologenome data with IN-sillico methods
+ Symbiodiniaceae diversity identification via Scrapping Hologenome data with IN-sillico methods
