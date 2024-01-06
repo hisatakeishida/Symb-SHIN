@@ -5,8 +5,6 @@
 -  Magnetic Island, Dunk Island, and Pandora Reef are known to experience high riverine influence while Fitzroy Island and Pelorus Island experience low riverine influence
 -  lcWGS was performed using Illumina HiSeq 2500 platform (2*100bp)
 
-![FIGURE 1462  copy](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/8a91bc78-c762-49e5-9099-c32623fc09f9)
-
 ## Required softwares 
 - bwa
 - samtools
@@ -65,6 +63,8 @@ do
      samtools view 0_symbgenome_mapping/${base}.sam -F 4 -b -@ 24 | samtools sort > symb_map_bams/${base}.bam -@ 24
 done
 ```
+![FIGURE 1462  copy](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/8a91bc78-c762-49e5-9099-c32623fc09f9)
+
 
 
 
