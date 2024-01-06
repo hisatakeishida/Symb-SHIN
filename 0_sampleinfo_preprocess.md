@@ -61,6 +61,7 @@ do
      base=$(basename ${infile} _1.fq.gz)
      bwa mem Smicro_CCMP2467_v2_Nand_et_al_2021_HiC_Smic1_1N.Bmin_Chen_et_al_2020.Cgor_v2_Chen_et_al_2022.Dtre_CCMP2556_v1_Dougan_et_al_2022.Evor_RCC1521_v2_Shah_et_al_XXXX.FkawHic_v3_Li_et_al_2020.fa.gz -t 24 ${infile} ${base}_2.fq.gz -o 0_symbgenome_mapping/${base}.sam
      samtools view 0_symbgenome_mapping/${base}.sam -F 4 -b -@ 24 | samtools sort > symb_map_bams/${base}.bam -@ 24
+     samtools fasta symb_map_bams/${base}.bam -@ 24 > symb_reads_fa/${base}.fa
 done
 ```
 ![FIGURE 1462  copy](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/8a91bc78-c762-49e5-9099-c32623fc09f9)
