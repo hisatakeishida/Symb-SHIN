@@ -47,7 +47,7 @@ python blast_sum.py
 - MAGs of symbionts can be recovered, but requires additional pre-filtering to minimize the impact of contamination to assembly
 - Samples with similar community composition of microbial taxa of interests can be identified (based on all the approaches we discuss in this paper), prior to assembly 
 - This will facilitate computationally intensive strain-aware assembly
-- Here, we provided an workflow to recover MAGs of important baterial symbionts of coral, _Endozoicomonas_ sp, an example for such analysis
+- Here, we provided an workflow to recover MAGs of important baterial symbionts of coral, _Endozoicomonas_ sp, as an example for such analysis
 
 ### 3.1 Sample clustering 
 ### 3.2 Metagenomic assembly and recovery 
