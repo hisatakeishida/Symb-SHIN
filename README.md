@@ -1,5 +1,5 @@
 # Symb-SHIN
-Symbiodiniaceae community analysis via Scrapping Hologenome data with IN-sillico methods
+**Symb**iodiniaceae community analysis via **S**crapping **H**ologenome data with **IN**-sillico methods
 
 ### Table of Contents
 
