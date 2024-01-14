@@ -39,6 +39,8 @@ do
 done
 ```
 
+python blast_sum.py
+
 ## 3. Recover MAGs <a name="magrecov"></a>
 - This is a work in progress
 - MAGs of symbionts can be recovered, but requires additional pre-filtering to minimize the impact of contamination to assembly
