@@ -37,9 +37,12 @@ do
      blastn -query C_gor_RT152_mtcob.fa -db ${infile} -outfmt 6 -perc_identity 100 -evalue 1e-50 -out mtcob_blast_hit/${base}
      sort -k3,3g -k12,12gr -k11,11g  mtcob_blast_hit/${base} | sort -u -k1,1 --merge > mtcob_blast_hit/${base}.sorted
 done
-```
+
+# Put top hits from all samples into one text file
 
 python blast_sum.py
+```
+
 
 ## 3. Recover MAGs <a name="magrecov"></a>
 - This is a work in progress
