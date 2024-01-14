@@ -39,10 +39,8 @@ do
 done
 
 # Put top hits from all samples into one text file
-
 python blast_sum.py
 ```
-
 
 ## 3. Recover MAGs <a name="magrecov"></a>
 - This is a work in progress
