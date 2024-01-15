@@ -8,7 +8,9 @@
 
 ## 0. Input data <a name="input"></a>
 - Non-coral reads for each hologenome sample
-- Softwares (metaSPAdes, Blastn) 
+- ## Required softwares 
+     - metaSPAdes
+     - Blastn
 
 ## 1. Metagenomic assembly <a name="MA"></a>
 - Perfomring metagenomic assembly (metaSPAdes) of non-coral reads from each hologenome sample
@@ -53,8 +55,10 @@ python blast_sum.py
 
 ### 3.1 Sample clustering 
 ### 3.2 Metagenomic assembly and recovery 
+- Required softwares 
+     - Aviary 
 ### 3.3 Alignment-free phylogeny 
-
+- d2ssect 
 
 
 
