@@ -13,8 +13,6 @@
 - ANGSD
 - PCAngsd
 - pigz
-- 
-
 
 ## 1. QC and reprocessing
 - Quality check with FASTQC and MultiQC for read quality and adapter contamination
