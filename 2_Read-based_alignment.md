@@ -61,7 +61,25 @@ do
 done
 ```
 
+cd /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/paired_noncoral_reads
 
+# # bwa index /scratch/project/ncmas_d85/ishida/symb_refseq/aligned_trimmed/Cladocopium_psbA_frontier_alignment_trimmed.fa 
+# # bwa index /scratch/project/ncmas_d85/ishida/symb_refseq/aligned_trimmed/symportal_ITS2_alignment_trimmed.fa 
+bwa index /scratch/project/ncmas_d85/ishida/symb_refseq/psbA-test.fa
+
+for infile in *_1.fq.gz
+do
+    base=$(basename ${infile} _1.fq.gz)
+    bwa mem /scratch/project/ncmas_d85/ishida/symb_refseq/psbA-test.fa -t 24 ${infile} ${base}_2.fq.gz -o /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_sam/${base}.sam
+    samtools view /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_sam/${base}.sam -F 4 -b -@ 24 | samtools sort > /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_bam/${base}.bam -@ 24
+    samtools index -@ 12 /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_bam/${base}.bam
+    rm /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_sam/${base}.sam
+    # bwa mem /scratch/project/ncmas_d85/ishida/symb_refseq/aligned_trimmed/symportal_ITS2_alignment_trimmed.fa  -t 24 ${infile} ${base}_2.fq.gz -o /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_all_sam/${base}.sam
+    # samtools view /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_all_sam/${base}.sam -F 4 -b -@ 24 | samtools sort > /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_all_bam/${base}.bam -@ 24
+
+    # bwa mem /scratch/project/ncmas_d85/ishida/symb_refseq/aligned_trimmed/symportal_Cladocopium.ITS2_alignment_trimmed.fa  -t 24 ${infile} ${base}_2.fq.gz -o /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_C_sam/${base}.sam
+    # samtools view /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_C_sam/${base}.sam -F 4 -b -@ 24 | samtools sort > /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_C_bam/${base}.bam -@ 24
+done
 
 
 
