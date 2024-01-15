@@ -7,10 +7,10 @@
 
 **[1. Assembly-based analysis](1_Assembly-based.md)**
 
-**[2. Read-based analysis]()**
+**[2. Read-based analysis]
 
-**[2. Read-based alignment analysis](2_Read-based_alignment.md)**
+**[2.1 Read-based alignment analysis](2_Read-based_alignment.md)**
 
-**[3. Read-based alignment-free analysis](3_Read-based_alignment-free.md)**
+**[2.2 Read-based alignment-free analysis](3_Read-based_alignment-free.md)**
 
 
