@@ -28,14 +28,18 @@
 - Maximum-likelihood phylogenetic tree was inferred from the trimmed MSA using IQ-TREE v2.1.3 (Nguyen et al. 2015)
 - Additional markers we compared include
   - _Cladocopium proliferum_
-    - SCF_055 (OQ359937)
-    - Aten-MI-1 (MW691104.1)
+    - SCF_055 (OQ359937), Aten-MI-1 (MW691104.1), Aten-MI-2 (MW691103.1), A03_50 (KF572189.1), Amil-MI (MW691105.1), Aten-WSY (MW691106.1), A02_71 (KF572195.1), JPB08_92_C1_Siderastrea (OQ359935.1), JPB08_77_C1_Siderastrea (OQ359936.1), A03_50_C1_Acropora_tenuis (OQ359938.1), A02_71_C1_Galaxea_fasicularis (OQ359939.1), Zam03_70_C1_Astropora (OQ359940.1)
   - _Cladocopium vulgare_ (OQ359929.1)
   - Cladocopium.latusorum MW819757.1
   - Cladocopium.pacificum MW861711.1
   - Cladocopium.madreporum OQ359918.1
   - Cladocopium.patulum OQ359922.1
-  - Cladocopium.sodalum OQ359896.1
+  - Cladocopium.sodalum
+    - A03_75_C3_Coelastrea OQ359899.1), A03_235_C3_Acropora_sarmentosa (OQ359900.1), A03_97_C3_Favites (OQ359901.1), Zan07_314_C3_Acropora (OQ359906.1), Zan07_379_C3_Acropora (OQ359907.1), Zan07_67_C3_Acropora (OQ359908.1), A02_20_C3_Acropora (OQ359902.1), A02_10_C3_Acropora (OQ359903.1), HI07_11_C3_Acropora (OQ359904.1), Pal16_ORT1_40A_C3_Acropora (OQ359905.1), A03_82_C3K_Acropora (OQ359894.1), A03_81_C3K_Acropora (OQ359896.1), A03_327_C3_Echinophyllia_mammiformis (OQ359897.1)
+  - _Cladocopium goreaui_
+    - RT152 (KF572162.1), RT113 (KF572161.1)
+
+![example (20)-01](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/14e77e59-8265-4f48-b340-3d73fe5c6c12)
 
 ## 2. Recover markers in contigs <a name="generecov"></a>
 - We used Blastn to identify contigs that contain reference markers of interests
