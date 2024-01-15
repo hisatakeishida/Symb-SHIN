@@ -38,9 +38,7 @@
     - A03_75_C3_Coelastrea OQ359899.1), A03_235_C3_Acropora_sarmentosa (OQ359900.1), A03_97_C3_Favites (OQ359901.1), Zan07_314_C3_Acropora (OQ359906.1), Zan07_379_C3_Acropora (OQ359907.1), Zan07_67_C3_Acropora (OQ359908.1), A02_20_C3_Acropora (OQ359902.1), A02_10_C3_Acropora (OQ359903.1), HI07_11_C3_Acropora (OQ359904.1), Pal16_ORT1_40A_C3_Acropora (OQ359905.1), A03_82_C3K_Acropora (OQ359894.1), A03_81_C3K_Acropora (OQ359896.1), A03_327_C3_Echinophyllia_mammiformis (OQ359897.1)
   - _Cladocopium goreaui_
     - RT152 (KF572162.1), RT113 (KF572161.1)
-
-![example (20)-01](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/14e77e59-8265-4f48-b340-3d73fe5c6c12)
-
+![example (20)-01](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/18577720-cc8a-4a2a-a885-5f7b38634a01)
 ## 2. Recover markers in contigs <a name="generecov"></a>
 - We used Blastn to identify contigs that contain reference markers of interests
 - We searched for contigs that contain full-length mitochondrial cytochrome b (mtCOB) sequence of _Cladocopium goreaui_ RT152 (KF206028.1)
