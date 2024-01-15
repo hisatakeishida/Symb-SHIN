@@ -38,39 +38,29 @@
     - A03_75_C3_Coelastrea OQ359899.1), A03_235_C3_Acropora_sarmentosa (OQ359900.1), A03_97_C3_Favites (OQ359901.1), Zan07_314_C3_Acropora (OQ359906.1), Zan07_379_C3_Acropora (OQ359907.1), Zan07_67_C3_Acropora (OQ359908.1), A02_20_C3_Acropora (OQ359902.1), A02_10_C3_Acropora (OQ359903.1), HI07_11_C3_Acropora (OQ359904.1), Pal16_ORT1_40A_C3_Acropora (OQ359905.1), A03_82_C3K_Acropora (OQ359894.1), A03_81_C3K_Acropora (OQ359896.1), A03_327_C3_Echinophyllia_mammiformis (OQ359897.1)
   - _Cladocopium goreaui_
     - RT152 (KF572162.1), RT113 (KF572161.1)
-![example (20)-01](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/18577720-cc8a-4a2a-a885-5f7b38634a01)
-## 2. Recover markers in contigs <a name="generecov"></a>
-- We used Blastn to identify contigs that contain reference markers of interests
-- We searched for contigs that contain full-length mitochondrial cytochrome b (mtCOB) sequence of _Cladocopium goreaui_ RT152 (KF206028.1)
+
+![example (20)-01](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/0d58ab85-c604-4d19-a5c6-c52784155a87)
+
+## 2. GraftM <a name="graftm"></a>
+- Recovering markers in reads using taxonomic sequence identifier (GraftM)
+- We used GraftM with custom ITS2 HMM profile (input:1327 ITS2 seqs from SymPortal, removed 121 ITS2 seqs as duplicate, continued analysis with 1210 ITS2 seqs)
 
 ```
-cd noncoral_assembly/
-for infile in *_contigs.fasta
+# creating GraftM with custom ITS2 HMM profile 
+graftM create --output ITS2_graftm.gpkg --sequences symportal_ITS2.fa --taxonomy ITS2_taxonomy.txt
+
+#ITS2_taxonomy.txt looks like
+C1	k__Dinophyceae,p__Suessiales,c__Symbiodiniaceae,o__Cladocopium,f__C1,g__C1
+C1b	k__Dinophyceae,p__Suessiales,c__Symbiodiniaceae,o__Cladocopium,f__C1,g__C1b
+C1au	k__Dinophyceae,p__Suessiales,c__Symbiodiniaceae,o__Cladocopium,f__C1,g__C1au
+
+cd noncoral_reads/
+for infile in *_1.fq.gz
 do
-     base=$(basename ${infile} _contigs.fasta)
-     makeblastdb -in ${infile} -dbtype nucl -parse_seqids 
-     blastn -query C_gor_RT152_mtcob.fa -db ${infile} -outfmt 6 -perc_identity 100 -evalue 1e-50 -out mtcob_blast_hit/${base}
-     sort -k3,3g -k12,12gr -k11,11g  mtcob_blast_hit/${base} | sort -u -k1,1 --merge > mtcob_blast_hit/${base}.sorted
+   base=$(basename ${infile} _1.fq.gz)
+   graftM graft --forward ${infile} --reverse ${base}_2.fq.gz --graftm_package ITS2_graftm.gpkg --input_sequence_type nucleotide --output_directory graftm_result/${base}
 done
-
-# Put top hits from all samples into one text file
-python blast_sum.py
 ```
-
-## 3. Recover MAGs <a name="magrecov"></a>
-- This is a work in progress
-- MAGs of symbionts can be recovered, but requires additional pre-filtering to minimize the impact of contamination to assembly
-- Samples with similar community composition of microbial taxa of interests can be identified (based on all the approaches we discuss in this paper), prior to assembly 
-- This will facilitate computationally intensive strain-aware assembly
-- Here, we provided an workflow to recover MAGs of important baterial symbionts of coral, _Endozoicomonas_ sp, as an example for such analysis
-
-### 3.1 Sample clustering 
-### 3.2 Metagenomic assembly and recovery 
-### 3.3 Alignment-free phylogeny 
-
-
-
-
 
 
 
