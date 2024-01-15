@@ -40,6 +40,8 @@ done
 
 # Put top hits from all samples into one text file
 python blast_sum.py
+
+- 39 out of 64 hologenome assesmbly had contigs that included full-length (914 bp) mitochondrial cytochrome b (mtCOB) sequence of _Cladocopium goreaui_ RT152 (KF206028.1)
 ```
 
 ## 3. Recover MAGs <a name="magrecov"></a>
@@ -52,8 +54,6 @@ python blast_sum.py
 ### 3.1 Sample clustering 
 ### 3.2 Metagenomic assembly and recovery 
 ### 3.3 Alignment-free phylogeny 
-
-
 
 
 
