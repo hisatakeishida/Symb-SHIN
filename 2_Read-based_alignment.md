@@ -59,26 +59,23 @@ do
    base=$(basename ${infile} _1.fq.gz)
    graftM graft --forward ${infile} --reverse ${base}_2.fq.gz --graftm_package ITS2_graftm.gpkg --input_sequence_type nucleotide --output_directory graftm_result/${base}
 done
+
+python graftM_result_summary.py
 ```
 
-cd /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/paired_noncoral_reads
+## 3. Alignment to marker/genome/mitogenome <a name="alignmentgenome"></a>
+- Use the number of reads uniquely mapped to markers as a proxy of abundance
 
-# # bwa index /scratch/project/ncmas_d85/ishida/symb_refseq/aligned_trimmed/Cladocopium_psbA_frontier_alignment_trimmed.fa 
-# # bwa index /scratch/project/ncmas_d85/ishida/symb_refseq/aligned_trimmed/symportal_ITS2_alignment_trimmed.fa 
-bwa index /scratch/project/ncmas_d85/ishida/symb_refseq/psbA-test.fa
+```
+bwa index psbA-markers.fa
 
 for infile in *_1.fq.gz
 do
     base=$(basename ${infile} _1.fq.gz)
-    bwa mem /scratch/project/ncmas_d85/ishida/symb_refseq/psbA-test.fa -t 24 ${infile} ${base}_2.fq.gz -o /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_sam/${base}.sam
-    samtools view /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_sam/${base}.sam -F 4 -b -@ 24 | samtools sort > /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_bam/${base}.bam -@ 24
-    samtools index -@ 12 /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_bam/${base}.bam
-    rm /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/psba_sam/${base}.sam
-    # bwa mem /scratch/project/ncmas_d85/ishida/symb_refseq/aligned_trimmed/symportal_ITS2_alignment_trimmed.fa  -t 24 ${infile} ${base}_2.fq.gz -o /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_all_sam/${base}.sam
-    # samtools view /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_all_sam/${base}.sam -F 4 -b -@ 24 | samtools sort > /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_all_bam/${base}.bam -@ 24
-
-    # bwa mem /scratch/project/ncmas_d85/ishida/symb_refseq/aligned_trimmed/symportal_Cladocopium.ITS2_alignment_trimmed.fa  -t 24 ${infile} ${base}_2.fq.gz -o /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_C_sam/${base}.sam
-    # samtools view /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_C_sam/${base}.sam -F 4 -b -@ 24 | samtools sort > /scratch/project/ncmas_d85/ishida/aten_cooke_analysis/marker_alignment/ITS2_C_bam/${base}.bam -@ 24
+    bwa mem psbA-markers.fa -t 24 ${infile} ${base}_2.fq.gz -o psba_sam/${base}.sam
+    samtools view psba_sam/${base}.sam -F 4 -b -@ 24 | samtools sort > psba_bam/${base}.bam -@ 24
+    samtools index -@ 12 psba_bam/${base}.bam
+    rm psba_sam/${base}.sam
 done
 
 
