@@ -1,0 +1,1 @@
+{"graftm_package_version": 3, "align_hmm": "graftm8gt7kip9_align.hmm", "search_hmms": ["graftmuxragrt9_search.hmm"], "refpkg": "ITS2_graftm_final.gpkg.refpkg", "trusted_cutoff": false, "range": 385.56556141672945, "unaligned_sequence_database": "symportal_ITS2.fa", "diamond_database": null}

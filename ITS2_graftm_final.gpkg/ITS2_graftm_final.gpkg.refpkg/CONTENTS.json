@@ -1,0 +1,53 @@
+{
+    "metadata": {
+        "create_date": "2023-09-06 14:41:08",
+        "format_version": "1.1",
+        "locus": "/scratch/d85/hi1895/tmp/tmpep39prn6/symportal_ITS2"
+    },
+    "files": {
+        "phylo_model": "phylo_modelyj9zaw4j.json",
+        "aln_fasta": "symportal_ITS2_deduplicated_aligned.fasta",
+        "seq_info": "symportal_ITS2_seqinfo.csv",
+        "taxonomy": "symportal_ITS2_taxonomy.csv",
+        "tree": "treetprykboj.tre",
+        "tree_stats": "symportal_ITS2.tre.log"
+    },
+    "md5": {
+        "phylo_model": "f2323a70cd67d63797836cea7ffa2e75",
+        "aln_fasta": "90638ec59341092f4ad2edd7db945faf",
+        "seq_info": "e92f3367f676c2e4fd54cf709b5a151d",
+        "taxonomy": "d6f2b1d6c13f6d3a772f3714e5732076",
+        "tree": "a1f0c498218c043029400491476fee1d",
+        "tree_stats": "72edea56d5b9cc48cea01386ae88d337"
+    },
+    "log": [
+        "Rerooted",
+        "Stripped refpkg (removed 0 files)",
+        "Loaded initial files into empty refpkg"
+    ],
+    "rollback": {
+        "metadata": {
+            "create_date": "2023-09-06 14:41:08",
+            "format_version": "1.1",
+            "locus": "/scratch/d85/hi1895/tmp/tmpep39prn6/symportal_ITS2"
+        },
+        "files": {
+            "phylo_model": "phylo_modelyj9zaw4j.json",
+            "aln_fasta": "symportal_ITS2_deduplicated_aligned.fasta",
+            "seq_info": "symportal_ITS2_seqinfo.csv",
+            "taxonomy": "symportal_ITS2_taxonomy.csv",
+            "tree": "symportal_ITS2.tre",
+            "tree_stats": "symportal_ITS2.tre.log"
+        },
+        "md5": {
+            "phylo_model": "f2323a70cd67d63797836cea7ffa2e75",
+            "aln_fasta": "90638ec59341092f4ad2edd7db945faf",
+            "seq_info": "e92f3367f676c2e4fd54cf709b5a151d",
+            "taxonomy": "d6f2b1d6c13f6d3a772f3714e5732076",
+            "tree": "428bed36712f2b905f31123acdeacb2c",
+            "tree_stats": "72edea56d5b9cc48cea01386ae88d337"
+        },
+        "rollback": null
+    },
+    "rollforward": null
+}
