@@ -9,8 +9,8 @@
 
 **2. Read-based analysis**
 
-**[ 2.1 Read-based alignment analysis](2_Read-based_alignment.md)**
+**[ 2.1 Read-based alignment analysis](2.1_Read-based_alignment.md)**
 
-**[ 2.2 Read-based alignment-free analysis](3_Read-based_alignment-free.md)**
+**[ 2.2 Read-based alignment-free analysis](2.2_Read-based_alignment-free.md)**
 
 
