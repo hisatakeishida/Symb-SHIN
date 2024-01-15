@@ -1,4 +1,4 @@
-# Perform metagenomic assembly to recover contigs or MAGs 
+# Perform metagenomic assembly to recover contigs or MAGs from hologenome dataset
 
 ## Table of Contents
 0. [Input data](#input)
