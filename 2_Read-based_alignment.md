@@ -43,6 +43,7 @@
 ## 2. GraftM <a name="graftm"></a>
 - Recovering markers in reads using taxonomic sequence identifier (GraftM)
 - We used GraftM with custom ITS2 HMM profile (input:1327 ITS2 seqs from SymPortal, removed 121 ITS2 seqs as duplicate, continued analysis with 1210 ITS2 seqs)
+- Benchmark is required for accuracy **(ITS2_graftm_final.gpkg)** 
 
 ```
 # creating GraftM with custom ITS2 HMM profile 
