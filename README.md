@@ -5,10 +5,12 @@
 
 **[0. Pre-filtering samples](0_sampleinfo_preprocess.md)**
 
-**[1. Assembly-based](1_Assembly-based.md)**
+**[1. Assembly-based analysis](1_Assembly-based.md)**
 
-**[2. Read-based alignment ](2_Read-based_alignment.md)**
+**[2. Read-based analysis]()**
 
-**[3. Read-based alignment-free ](3_Read-based_alignment-free.md)**
+**[2. Read-based alignment analysis](2_Read-based_alignment.md)**
+
+**[3. Read-based alignment-free analysis](3_Read-based_alignment-free.md)**
 
 
