@@ -11,6 +11,7 @@
 - ## Required softwares 
      - metaSPAdes
      - Blastn
+     - Aviary 
 
 ## 1. Metagenomic assembly <a name="MA"></a>
 - Perfomring metagenomic assembly (metaSPAdes) of non-coral reads from each hologenome sample
