@@ -1,4 +1,4 @@
-![HI_Figure2_FrontierProtistology-01-01](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/84a9d4fa-b213-4d4f-8771-755cf48b5261)# Symb-SHIN
+# Symb-SHIN
 **Symb**iodiniaceae community analysis via **S**crapping **H**ologenome data with **IN**-sillico methods
 
 ![HI_Figure2_FrontierProtistology-01-01](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/b130631c-eab1-4e1b-9c3c-eeed5b928b8d)
