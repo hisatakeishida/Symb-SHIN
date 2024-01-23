@@ -46,7 +46,7 @@ pigz noncoral_reads/*.fq
 ## 3. Coral genotyping using GATK, ANGSD, PCANGSD
 - Coral genotype can be identified based on genotype likelihood (See Riginos et al., 2024 for further details)
 
-## 5. Get putative Symbiodiniaceae reads by mapping non-coral reads to Symbiodiniaceae genomes including 
+## 4. Get putative Symbiodiniaceae reads by mapping non-coral reads to Symbiodiniaceae genomes including 
 - Clade A: Symbiodinium microadriaticum CCMP2467 (Nand et al., 2021)
 - Clade B: Breviolum minutum Mf1.05b (Shoguchi et al., 2013)
 - Clade C: Cladocopium goreaui SCF055-01 (Chen et al., 2022)
