@@ -1,8 +1,10 @@
-# Sample information
-- Hologenome data recently generated for _Acropora kenti_ (Cooke et al., 2020) across the inshore central Great Barrier Reef (GBR) were generously provided by Dr Ira Cooke and Jia Zhang at James Cook University (JCU)
+## Sample information
+- We analyzed coral hologenome data of _Acropora kenti_ (Cooke et al., 2020) across the inshore central Great Barrier Reef (GBR)
+- These data were generously provided by Dr Ira Cooke and Dr Jia Zhang from James Cook University (JCU)
 -  In 2015, 148 adult colonies were sampled from five locations in inshore central GBR
 -  These included Magnetic Island, Dunk Island, Fitzroy Island, Pandora Reef, and Pelorus Island
--  Magnetic Island, Dunk Island, and Pandora Reef are known to experience high riverine influence while Fitzroy Island and Pelorus Island experience low riverine influence
+-  Magnetic Island, Dunk Island, and Pandora Reef are known to experience high riverine influence
+-  Fitzroy Island and Pelorus Island experience low riverine influence
 -  lcWGS was performed using Illumina HiSeq 2500 platform (2*100bp)
 
 ## Required softwares 
