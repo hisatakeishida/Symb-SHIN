@@ -3,7 +3,7 @@
 
 ### Table of Contents
 
-**[0. Pre-filtering samples](0_sampleinfo_preprocess.md)**
+**[(A). Pre-filtering samples and host-genotyping](A_preprocess_host.md)**
 
 **[1. Assembly-based analysis](1_Assembly-based.md)**
 
