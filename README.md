@@ -5,7 +5,7 @@
 
 ### Table of Contents
 
-**[(A). Pre-filtering samples and host-genotyping](A_preprocess_host.md)**
+**[(A). Pre-processing and host-genotyping](A_preprocess_host.md)**
 
 **[(B). Assembly-based approaches](1_Assembly-based.md)**
 
