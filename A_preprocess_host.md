@@ -1,5 +1,5 @@
 ## Sample information
-- We analyzed coral hologenome data of _Acropora kenti_ (Cooke et al., 2020) across the inshore central Great Barrier Reef (GBR)
+- We analyzed coral hologenome data of _Acropora kenti_ (Cooke et al., 2020), sampled across the inshore central Great Barrier Reef (GBR)
 - These data were generously provided by Dr Ira Cooke and Dr Jia Zhang from James Cook University (JCU)
 -  In 2015, 148 adult colonies were sampled from five locations in inshore central GBR
 -  These included Magnetic Island, Dunk Island, Fitzroy Island, Pandora Reef, and Pelorus Island
