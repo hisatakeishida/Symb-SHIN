@@ -18,7 +18,7 @@
 
 ## 1. QC and reprocessing
 - Quality check with FASTQC and MultiQC for read quality and adapter contamination
-- QC using Trimmomatic (4bp sliding window, minimum phred score quality of 20, minimum read legth og 50 bp, Illuminaclip option in palindrome mode)
+- QC using Trimmomatic (4bp sliding window, minimum phred score quality of 20, minimum read legth of 50 bp, Illuminaclip option in palindrome mode)
 
 ## 2. Map post-QC reads to coral genome and get coral and non-coral reads (i.e. reads that did not map against host coral reference genome; avaiable at http://aten.reefgenomics.org/download/) 
 ```
