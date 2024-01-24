@@ -2,10 +2,10 @@
 - We analyzed coral hologenome data of _Acropora kenti_ (Cooke et al., 2020), sampled across the inshore central Great Barrier Reef (GBR)
 - These data were generously provided by Dr Ira Cooke and Dr Jia Zhang from James Cook University (JCU)
 -  In 2015, 148 adult colonies were sampled from five locations in inshore central GBR
--  These included Magnetic Island, Dunk Island, Fitzroy Island, Pandora Reef, and Pelorus Island
+-  These included Magnetic Island, Dunk Island, Fitzroy Island, Pandora Reef, and Pelorus Island (see the map below)
 -  Magnetic Island, Dunk Island, and Pandora Reef are known to experience high riverine influence
 -  Fitzroy Island and Pelorus Island experience low riverine influence
--  lcWGS was performed using Illumina HiSeq 2500 platform (2*100bp)
+-  Low-coverage whole genome sequencing (3X of coral genome per sample) was performed using Illumina HiSeq 2500 platform (2*100bp)
 
 ## Required softwares 
 - bwa
@@ -30,8 +30,10 @@ for infile in *_R1.fastq.gz
 do
      base=$(basename ${infile} _R1.fastq.gz)
      bwa mem aten_final_0.11.fasta.gz -t 24 ${infile} ${base}_R2.fastq.gz -o 0_coralgenome_mapping/${base}.sam
+
      # get coral reads using -F4 flag
-     samtools view 0_coralgenome_mapping/${base}.sam -F4  -b -@ 96 | samtools sort > coral_bams/${base}.bam -@ 96 
+     samtools view 0_coralgenome_mapping/${base}.sam -F4  -b -@ 96 | samtools sort > coral_bams/${base}.bam -@ 96
+
      # get non-coral reads using -f12 -F256 flags
      samtools view 0_coralgenome_mapping/${base}.sam -f12 -F256  -b -@ 96 | samtools sort > non_coral_bams/${base}.bam -@ 96
 
@@ -44,15 +46,16 @@ pigz noncoral_reads/*.fq
 
 ```
 ## 3. Coral genotyping using GATK, ANGSD, PCANGSD
-- Coral genotype can be identified based on genotype likelihood (See Riginos et al., 2024 for further details)
+- Coral genotype can be identified based on genotype likelihood
+- See https://github.com/iracooke/atenuis_wgs_pub for Cooke et al. (2020) and https://github.com/bakeronit/acropora_digitifera_wgs for Zhang et al. (2022) 
 
 ## 4. Get putative Symbiodiniaceae reads by mapping non-coral reads to Symbiodiniaceae genomes including 
 - Clade A: Symbiodinium microadriaticum CCMP2467 (Nand et al., 2021)
 - Clade B: Breviolum minutum Mf1.05b (Shoguchi et al., 2013)
 - Clade C: Cladocopium goreaui SCF055-01 (Chen et al., 2022)
 - Clade D: Durusdinium trenchii CCMP2556 (Dougan et al., 2023)
-- Clade E: Effernium voratum RCC1521 (Shah et al., 2023)
-- Clade F: Fugacium kawagutii CCMP2468 (Li et al., 2020)
+- Clade E: Effernium voratum RCC1521 (Shah et al., 2023a)
+- Clade F: Fugacium kawagutii CCMP2468 (Li et al., 2019)
 
 ```
 cd noncoral_reads/
