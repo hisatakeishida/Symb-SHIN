@@ -10,12 +10,12 @@
 
 **[(A). Pre-processing and host-genotyping](A_preprocess_host.md)**
 
-**[(B). Assembly-based approaches](1_Assembly-based.md)**
+**[(B). Assembly-based approaches](B_Assembly-based.md)**
 
 **2. Read-based analysis**
 
-**[ (C) Read-based alignment-based methods](2.1_Read-based_alignment.md)**
+**[ (C) Read-based alignment-based methods](C_Read-based_alignment.md)**
 
-**[ (D) Read-based alignment-free methods](2.2_Read-based_alignment-free.md)**
+**[ (D) Read-based alignment-free methods](D_Read-based_alignment-free.md)**
 
 
