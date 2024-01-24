@@ -1,3 +1,6 @@
+
+Supplementary information for a manuscript submitted to Frontiers in Protistology
+
 # Symb-SHIN
 **Symb**iodiniaceae community analysis via **S**crapping **H**ologenome data with **IN**-sillico methods
 
