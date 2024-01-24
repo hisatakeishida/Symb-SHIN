@@ -8,7 +8,7 @@
 
 ## 0. Input data <a name="input"></a>
 - Non-coral reads for each hologenome sample
-- ## Required softwares 
+- Required softwares 
      - metaSPAdes
      - Blastn
 
