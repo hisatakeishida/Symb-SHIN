@@ -148,15 +148,15 @@ python graftM_result_summary.py
 - Use the number of reads uniquely mapped to markers as a proxy of abundance
 
 ```
-bwa index psbA-markers.fa
+bwa index psbA-Cgor_Cpro_markers.fa
 
 for infile in *_1.fq.gz
 do
     base=$(basename ${infile} _1.fq.gz)
-    bwa mem psbA-markers.fa -t 24 ${infile} ${base}_2.fq.gz -o psba_sam/${base}.sam
-    samtools view psba_sam/${base}.sam -F 4 -b -@ 24 | samtools sort > psba_bam/${base}.bam -@ 24
-    samtools index -@ 12 psba_bam/${base}.bam
-    rm psba_sam/${base}.sam
+    bwa mem psbA-Cgor_Cpro_marker -t 24 ${infile} ${base}_2.fq.gz -o psba_sam_cgor_cpro/${base}.sam
+    samtools view psba_sam_cgor_cpro/${base}.sam -F 4 -b -@ 24 | samtools sort > psba_bam_cgor_cpro/${base}.bam -@ 24
+    samtools index -@ 12 psba_bam_cgor_cpro/${base}.bam
+    rm psba_sam_cgor_cpro/${base}.sam
 done
 ```
 
