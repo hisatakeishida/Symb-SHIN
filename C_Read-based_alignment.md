@@ -11,12 +11,12 @@
 - Required softwares 
      - Samtools v1.19.2 (https://github.com/samtools/samtools) 
      - bwa v0.7.17 (https://github.com/lh3/bwa)
-     - GraftM v0.14.0 (https://github.com/geronimp/graftM)
      - MAFFT v7.471 (https://github.com/GSLBiotech/mafft)
      - seqmagic (https://github.com/fhcrc/seqmagick)
      - MrBayes v3.2.7a (https://nbisweden.github.io/MrBayes/)
      - beagle-lib v4.0.0 (https://github.com/beagle-dev/beagle-lib?tab=readme-ov-file)
      - perl  (https://github.com/Perl/perl5)
+     - GraftM v0.14.0 (https://github.com/geronimp/graftM)
 
 ## 1. Generating consensus marker sequence <a name="consensus"></a>
 - Recoverying consensus marker sequence for each sample 
