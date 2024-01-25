@@ -159,8 +159,7 @@ do
     rm psba_sam_cgor_cpro/${base}.sam
 done
 ```
-- Number of reads mapped psbAncr to _C. goreaui_, _C. proliferum_, and _C. sodalum_
+- Number of reads mapped psbAncr to _C. goreaui_, _C. proliferum_, and _C. sodalum_ for hologenome in Cluster1
 ![Cgor_Cpro](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/9a3436f1-993b-4ccc-8386-045fc3e404ca)
-
 
 - See https://github.com/institut-de-genomique/TaraPacific_Pocillopora-transcriptomic and https://github.com/iracooke/atenuis_wgs_pub for applications of read-based alignment-methods with genome or mitogenome
