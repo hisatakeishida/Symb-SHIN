@@ -8,7 +8,7 @@
 
 ## 0. Input data <a name="input"></a>
 - Non-coral reads for each hologenome sample
-- ## Required softwares 
+- Required softwares 
      - Samtools v1.19.2 (https://github.com/samtools/samtools) 
      - bwa v0.7.17 (https://github.com/lh3/bwa)
      - GraftM v0.14.0 (https://github.com/geronimp/graftM)
