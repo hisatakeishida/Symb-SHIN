@@ -8,13 +8,13 @@
 -  Low-coverage whole genome sequencing (3X of coral genome per sample) was performed using Illumina HiSeq 2500 platform (2*100bp)
 
 ## Required softwares 
-- bwa
-- samtools
-- bedtools
-- GATK
+- bwa v.0.7.17 (https://github.com/lh3/bwa)
+- samtools v.1.19.2 (https://github.com/samtools/samtools)
+- bedtools v.2.31.1 (https://github.com/arq5x/bedtools2)
+- GATK4
 - ANGSD
 - PCAngsd
-- pigz
+- pigz 
 
 ## 1. QC and reprocessing
 - Quality check with FASTQC and MultiQC for read quality and adapter contamination
