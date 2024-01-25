@@ -1,4 +1,4 @@
-![image](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/a225b2c2-050a-4d34-8acf-c5ac66fe221d)# Perform read-based k-mer based alignment-free analysis on hologenome dataset
+# Perform read-based k-mer based alignment-free analysis on hologenome dataset
 
 ## Table of Contents
 0. [Input data](#input)
