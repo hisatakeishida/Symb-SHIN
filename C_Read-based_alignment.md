@@ -13,10 +13,10 @@
      - bwa v0.7.17 (https://github.com/lh3/bwa)
      - GraftM v0.14.0 (https://github.com/geronimp/graftM)
      - MAFFT v7.471 (https://github.com/GSLBiotech/mafft)
+     - seqmagic (https://github.com/fhcrc/seqmagick)
      - MrBayes v3.2.7a (https://nbisweden.github.io/MrBayes/)
      - beagle-lib v4.0.0 (https://github.com/beagle-dev/beagle-lib?tab=readme-ov-file)
      - perl  (https://github.com/Perl/perl5)
-
 
 ## 1. Generating consensus marker sequence <a name="consensus"></a>
 - Recoverying consensus marker sequence for each sample 
@@ -34,7 +34,6 @@
 ```
 bwa index psbA-seed.fa
 cd noncoral_reads/
-
 #read mapping
 for infile in *_1.fq.gz
 do
@@ -80,7 +79,6 @@ done > All_psbA-Cladocopium100-90_psbA.aln.mpileup.consensus.fa
 
 - Multiple sequence alignment (MSA) of a set of psbA sequences, including consensus psbAncr sequence for each sample and other psbA reference marker sequences (provided below), was generated using MAFFT in mafft-linsi mode (Katoh and Standley 2013)
 - Bayesian phylogenetic tree was inferred from the MSA using MrBayes
-- Tree is visualized in Figure 2(B)
 - Additional markers we used include
   - _Cladocopium proliferum_
     - SCF_055 (OQ359937), Aten-MI-1 (MW691104.1), Aten-MI-2 (MW691103.1), A03_50 (KF572189.1), Amil-MI (MW691105.1), Aten-WSY (MW691106.1), A02_71 (KF572195.1), JPB08_92_C1_Siderastrea (OQ359935.1), JPB08_77_C1_Siderastrea (OQ359936.1), A03_50_C1_Acropora_tenuis (OQ359938.1), A02_71_C1_Galaxea_fasicularis (OQ359939.1), Zam03_70_C1_Astropora (OQ359940.1)
@@ -94,16 +92,16 @@ done > All_psbA-Cladocopium100-90_psbA.aln.mpileup.consensus.fa
   - _Cladocopium goreaui_
     - RT152 (KF572162.1), RT113 (KF572161.1)
 
+- MSA using mafft 
 ```
-# MSA using mafft 
 mafft --maxiterate 1000 --localpair --thread 24 psbA_consenus_and_ref.fa > psbA_consenus_and_ref_alignment.fa
 
 # convert fasta to nexus
 seqmagick convert --output-format nexus --alphabet dna psbA_consenus_and_ref_alignment.fa psbA_consenus_and_ref_alignment.nexus
 ```
 
+- build bayesian phylogeney
 ```
-# build bayesian phylogeney
 mpirun -np 1 MrbayesCommands.nex
 ```
 
@@ -119,13 +117,13 @@ begin mrbayes;
    sumt;
 end;
 ```
-- Resulting tree was investigated using TVBOT (https://www.chiplot.online/tvbot.html)
+- Resulting tree was investigated using TVBOT (https://www.chiplot.online/tvbot.html) and visualized in Figure 2B
 
 ## 2. GraftM <a name="graftm"></a>
 - Recovering markers in reads using taxonomic sequence identifier (GraftM)
 - We used GraftM with custom ITS2 HMM profile (input:1327 ITS2 seqs from SymPortal, removed 121 ITS2 seqs as duplicate, continued analysis with 1210 ITS2 seqs)
 - Benchmark is required for accuracy (Beta version available at **[ ITS2_graftm_final.gpkg](ITS2_graftm_final.gpkg)**)
-- Results are visualised as a heatmap Figure 2(B)
+- Results are visualised as a heatmap in Figure 2B
 
 ```
 # creating GraftM with custom ITS2 HMM profile 
@@ -162,4 +160,4 @@ do
 done
 ```
 
-- See https://github.com/institut-de-genomique/TaraPacific_Pocillopora-transcriptomic and https://github.com/iracooke/atenuis_wgs_pub for applications of alignment-methods with genome and mitogenome
+- See https://github.com/institut-de-genomique/TaraPacific_Pocillopora-transcriptomic and https://github.com/iracooke/atenuis_wgs_pub for applications of read-based alignment-methods with genome or mitogenome
