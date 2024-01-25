@@ -52,7 +52,6 @@ python blast_sum.py
 - Samples with similar community composition of microbial taxa of interests can be identified (based on all the approaches we discuss in this paper), prior to assembly 
 - This will facilitate strain-aware assembly
 - Required softwares 
-     - d2ssect (https://github.com/bakeronit/d2ssect)
      - Aviary v.0.8.3 (https://github.com/rhysnewell/aviary)
   
 
