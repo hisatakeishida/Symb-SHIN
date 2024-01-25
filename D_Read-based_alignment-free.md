@@ -6,7 +6,7 @@
 
 ## 0. Input data <a name="input"></a>
 - Non-coral reads for each hologenome sample
-- ## Required softwares 
+- Required softwares 
      - bwa v.0.7.17 (https://github.com/lh3/bwa)
      - samtools v.1.19.2 (https://github.com/samtools/samtools)
      - d2ssect (https://github.com/bakeronit/d2ssect)
