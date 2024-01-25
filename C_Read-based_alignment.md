@@ -19,7 +19,7 @@
      - GraftM v0.14.0 (https://github.com/geronimp/graftM)
 
 ## 1. Generating consensus marker sequence <a name="consensus"></a>
-- Recoverying consensus marker sequence for each sample 
+- Recoverying consensus sequence of marker genes for each sample 
 - Adopting methods from https://github.com/institut-de-genomique/TaraPacific_Pocillopora-transcriptomic (BAMFilteration.pl and MpileuptoConsensus.pl were adopted) 
 - We used psbAncr sequences below as a reference (seed) to construct consensus psbAncr sequence of each sample (psbA-seed.fa):
   - _Cladocopium proliferum_ SCF_055_C1_Atenuis_MagneticIsland (OQ359937.1)
