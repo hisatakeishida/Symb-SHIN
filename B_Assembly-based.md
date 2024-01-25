@@ -9,8 +9,8 @@
 ## 0. Input data <a name="input"></a>
 - Non-coral reads for each hologenome sample
 - Required softwares 
-     - metaSPAdes
-     - Blastn
+     - metaSPAdes v.3.15.5 (https://github.com/ablab/spades)
+     - Blastn (BLAST® Command Line Applications User Manual [Internet]. Bethesda (MD): National Center for Biotechnology Information (US); 2008-. Available from: https://www.ncbi.nlm.nih.gov/books/NBK279690/)
 
 ## 1. Metagenomic assembly <a name="MA"></a>
 - Perfomring metagenomic assembly (metaSPAdes) of non-coral reads from each hologenome sample
@@ -52,8 +52,9 @@ python blast_sum.py
 - Samples with similar community composition of microbial taxa of interests can be identified (based on all the approaches we discuss in this paper), prior to assembly 
 - This will facilitate strain-aware assembly
 - Required softwares 
-     - d2ssect
-     - Aviary
+     - d2ssect (https://github.com/bakeronit/d2ssect)
+     - Aviary v.0.8.3 (https://github.com/rhysnewell/aviary)
+  
 
 
 
