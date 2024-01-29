@@ -4,7 +4,7 @@
 ## Symb-SHIN
 **Symb**iodiniaceae community analysis via **S**crapping **H**ologenome data with **IN**-sillico methods
 
-
+![Figure1_png](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/477de686-85c1-4411-81c8-6dc1a373f552)
 
 ### Table of Contents
 
