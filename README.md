@@ -18,4 +18,4 @@
 
 **[ (D) Read-based alignment-free methods](D_Read-based_alignment-free.md)**
 
-
+Some of the methods above are put together into a snakemake pipeline (https://github.com/j-Cooper-A/AF-Comparison). 
