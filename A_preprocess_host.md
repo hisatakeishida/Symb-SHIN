@@ -50,6 +50,7 @@ pigz noncoral_reads/*.fq
 ```
 ## 3. Coral genotyping using GATK, ANGSD, PCANGSD
 - Coral genotype can be identified based on genotype likelihood
+- See https://ecoevorxiv.org/repository/view/6714/ for more details
 - See https://github.com/iracooke/atenuis_wgs_pub for Cooke et al. (2020) and https://github.com/bakeronit/acropora_digitifera_wgs for Zhang et al. (2022) 
 
 ![FIGURE 1462  copy](https://github.com/hisatakeishida/Symb-SHIN/assets/95674651/8a91bc78-c762-49e5-9099-c32623fc09f9)
