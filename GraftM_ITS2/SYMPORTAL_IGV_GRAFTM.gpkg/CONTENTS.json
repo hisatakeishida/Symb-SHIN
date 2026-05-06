@@ -1,0 +1,1 @@
+{"graftm_package_version": 3, "align_hmm": "graftmnrwzz5a3_align.hmm", "search_hmms": ["graftmocw9sml4_search.hmm"], "refpkg": "SYMPORTAL_IGV_GRAFTM.gpkg.refpkg", "trusted_cutoff": false, "range": 385.4863685932388, "unaligned_sequence_database": "SymPortal_unique_DIVs.fasta", "diamond_database": null}

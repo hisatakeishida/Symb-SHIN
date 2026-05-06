@@ -1,0 +1,53 @@
+{
+    "metadata": {
+        "create_date": "2025-08-14 17:37:19",
+        "format_version": "1.1",
+        "locus": "/scratch/temp/15961648/tmp3x_qu44c/SymPortal_unique_DIVs"
+    },
+    "files": {
+        "phylo_model": "phylo_modelmn71gu1_.json",
+        "aln_fasta": "SymPortal_unique_DIVs_deduplicated_aligned.fasta",
+        "seq_info": "SymPortal_unique_DIVs_seqinfo.csv",
+        "taxonomy": "SymPortal_unique_DIVs_taxonomy.csv",
+        "tree": "tree0a4c16ge.tre",
+        "tree_stats": "SymPortal_unique_DIVs.tre.log"
+    },
+    "md5": {
+        "phylo_model": "ff61283ae67b3bb5ab0ce1d5a06c2b68",
+        "aln_fasta": "fdee308a1bd5685261062dbe4a688b7a",
+        "seq_info": "7194ccfe50d02e9900036a02f9c534f1",
+        "taxonomy": "67ed010e6d72d4abddc35c6b185c4d1c",
+        "tree": "c7fb0d874eb4b25a99023dc8a7bf2363",
+        "tree_stats": "fbb22e0a3f767b62a1bdd467c6862c79"
+    },
+    "log": [
+        "Rerooted",
+        "Stripped refpkg (removed 0 files)",
+        "Loaded initial files into empty refpkg"
+    ],
+    "rollback": {
+        "metadata": {
+            "create_date": "2025-08-14 17:37:19",
+            "format_version": "1.1",
+            "locus": "/scratch/temp/15961648/tmp3x_qu44c/SymPortal_unique_DIVs"
+        },
+        "files": {
+            "phylo_model": "phylo_modelmn71gu1_.json",
+            "aln_fasta": "SymPortal_unique_DIVs_deduplicated_aligned.fasta",
+            "seq_info": "SymPortal_unique_DIVs_seqinfo.csv",
+            "taxonomy": "SymPortal_unique_DIVs_taxonomy.csv",
+            "tree": "SymPortal_unique_DIVs.tre",
+            "tree_stats": "SymPortal_unique_DIVs.tre.log"
+        },
+        "md5": {
+            "phylo_model": "ff61283ae67b3bb5ab0ce1d5a06c2b68",
+            "aln_fasta": "fdee308a1bd5685261062dbe4a688b7a",
+            "seq_info": "7194ccfe50d02e9900036a02f9c534f1",
+            "taxonomy": "67ed010e6d72d4abddc35c6b185c4d1c",
+            "tree": "2404332b878bc52e5d709ca88ce7bbab",
+            "tree_stats": "fbb22e0a3f767b62a1bdd467c6862c79"
+        },
+        "rollback": null
+    },
+    "rollforward": null
+}
